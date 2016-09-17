@@ -1,7 +1,7 @@
 NLSFindByPlaceOL3
 =================
 
-This <a href="http://geo.nls.uk/maps/dev/NLSFindByPlaceOL3/index.html">demonstration application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.6</a>, and <a href="http://geoserver.org/">GeoServer</a> to form a geographical retrieval inteface for historical maps. Searching is possible by zooming in on the map, with an option to change the map base layer between OpenStreetMap and Google layers. Searching is also possible by using a Nominatim gazetteer, a British National Grid Reference, as well as historic county and parish drop-down lists. 
+This <a href="http://geo.nls.uk/maps/dev/NLSFindByPlaceOL3/index.html">demonstration application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.6</a>, and <a href="http://geoserver.org/">GeoServer</a> to form a geographical retrieval inteface for historical maps. Searching is possible by zooming in on the map, with an option to change the map base layer between Bing, Ordnance Survey and OpenStreetMap layers. Searching is also possible by using a Nominatim gazetteer, a British National Grid Reference, as well as historic county and parish drop-down lists. 
 
 The boundaries of historic maps are held as shapefiles within GeoServer, pre-rendered using GeoWebCache and customised for display using GeoServer Styled Layer Descriptors. Clicking on the map initiates a click handler which performs a Web Feature Service request to GeoServer, returning features that intersect with the point clicked upon. Selected fields from these features are returned to a right-hand 'Results' div/panel, and the features are highlighted on the map by creating a temporary vector layer overlay.
 
