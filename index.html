@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Find by place - OpenLayers viewer for accessing maps by bounding boxes - National Library of Scotland</title>
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.css"></script>
+		<link type="text/css" rel="stylesheet" href="findcss.css" media="screen" />	<style>
+		.ol-mouse-position{position: absolute; right:8px;height:80px; font-size: 9pt;text-align: right;background: rgba(255, 255, 255, 0.5);line-height: 13pt; border-radius: 2px;}
+	</style> 
+        </head>
+
+	<body>
+
+	    <div id="header">
+		<div id="headertitle">	<h1>Find by Place</h1><br />
+		<h2>Zoom in and click on the map to view historic maps covering this location</h2>
+	    	</div>
+	    </div>
+		
+	    <div id="sidebar">
+		<h3>Search for a place:</h3>
+
+			<form id="nlsgazform" class="notranslate">
+				<p><label for="nlsgaz">Gazetteer / Nat Grid Ref:</label> 
+				<input type="radio" name="nlsgazarea" value="uk" checked>UK 
+     				 <input type="radio" name="nlsgazarea" value="">World
+				<input type="search" autocomplete="off" id="nlsgaz" onfocus="if(this.value == 'Type a placename...') { this.value = ''; }" onblur="this.value=!this.value?'Type a placename...':this.value;" value="Type a placename..." name="nlsgaz" /> or</p>
+				<p><label for="county">County:</label> <select id="county" name="county"></select></p>
+				<p id="parish_span"><label for="parish">Parish:</label> <select id="parish" name="parish"></select></p>
+			</form>
+
+			<br />
+
+			<h3>Choose a map series:</h3>
+  			<div id="overlaySelect"></div>
+	     </div>
+ 
+
+	
+	     <div id="map" class="map">
+			<form><select id="layerSelect" onchange="changemap(this.selectedIndex)"></select></form>
+			<div id="scalebar"></div>
+	     </div>
+
+		
+		<div id="resultsSideBar">
+			<div id="results"></div>
+		</div>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.14/proj4.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.6.0/ol.js"></script>
+		<script type="text/javascript" src="gaz.js"></script>
+		<script type="text/javascript" src="find.js"></script> 
+
+
+</body>
+</html>
+
