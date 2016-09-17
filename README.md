@@ -1,5 +1,5 @@
-NLSExploreGeoreferencedMaps
-===========================
+NLSFindByPlaceOL3
+=================
 
 This <a href="http://geo.nls.uk/maps/dev/NLSFindByPlaceOL3/index.html">demonstration application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.6</a>, and <a href="http://geoserver.org/">GeoServer</a> to form a geographical retrieval inteface for historical maps. Searching is possible by zooming in on the map, with an option to change the map base layer between OpenStreetMap and Google layers. Searching is also possible by using a Nominatim gazetteer, a British National Grid Reference, as well as historic county and parish drop-down lists. 
 
