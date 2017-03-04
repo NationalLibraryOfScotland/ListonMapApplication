@@ -1,13 +1,23 @@
 NLSFindByPlaceOL3
 =================
 
-This <a href="http://geo.nls.uk/maps/dev/NLSFindByPlaceOL3/index.html">demonstration application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.6</a>, and <a href="http://geoserver.org/">GeoServer</a> to form a geographical retrieval inteface for historical maps. Searching is possible by zooming in on the map, with an option to change the map base layer between Bing, Ordnance Survey and OpenStreetMap layers. Searching is also possible by using a Nominatim gazetteer, a British National Grid Reference, as well as historic county and parish drop-down lists. 
+This <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/">map application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.5</a>, and GE0JSON sets of points and lines to form a geographical interface for the <a href="http://digital.nls.uk/travels-of-henrietta-liston/index.html">tours of Henrietta Liston, 1796-1801</a>. 
 
-The boundaries of historic maps are held as shapefiles within GeoServer, pre-rendered using GeoWebCache and customised for display using GeoServer Styled Layer Descriptors. Clicking on the map initiates a click handler which performs a Web Feature Service request to GeoServer, returning features that intersect with the point clicked upon. Selected fields from these features are returned to a right-hand 'Results' div/panel, and the features are highlighted on the map by creating a temporary vector layer overlay.
+There are <a href="http://digital.nls.uk/travels-of-henrietta-liston/places.html">Help Notes about the map application</a>, explaining its basic use.
 
-<a href="http://geo.nls.uk/maps/dev/NLSFindByPlaceOL3/index.html">This application</a> was originally developed by <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a> for the <a href="http://www.nls.uk">National Library of Scotland<a> in 2011. Following discussion in 2014, the application is now released as open-source, ON CONDITION THAT IT IS DEVELOPED WITH A DIFFERENT IMPLEMENTATION OF GEOSERVER, AND NOT AS A REPLACEMENT OR ALTERNATIVE TO VIEWING THE NATIONAL LIBRARY OF SCOTLAND'S MAPS. We hope that other libraries, archives and institutions may benefit from the code in making available their geographical collections.
+All the map specific Javascript is in the liston-map.js file.
 
-The application accompanies the <a href="https://github.com/NationalLibraryOfScotland/NLSExploreGeoreferencedMapsOL3">NLSExploreGeoreferencedMaps</a> Github repository and application, sharing a similar interface, use of OpenLayers, gazetteer search and css.
+The left-hand map panel allows a set of modern background maps to be displayed, and the lines and points of each tour. The right-hand map panel shows three georeferenced historical maps from the 1790s, which display at different zoom levels. These maps were generated using <a href="https://www.maptiler.com/">MapTiler</a>.
 
-View a more <a href="http://maps.nls.uk/geo/find/">complete working version of the application</a> on the National Library of Scotland Map Images website.
+The map application allows searching by a 'Search Places Visited' button, bringing up a gazetteer of places (presented using <a href="http://getbootstrap.com/components/#nav-tabs">Bootstrap Nav Tabs</a>). Selecting a place initiates a zoomMap(x,y) function which closes the gazetteer div, zooms to the selected place on the map, and selects it. It is also possible to search directly by zooming in on the map. 
+
+Some of the functionality of the dual-map viewer, including the cross-hair slave pointer, is taken from the National Library of Scotland <a href="http://maps.nls.uk/geo/explore/sidebyside.cfm">Side-by-Side viewer</a>.
+
+The lines and points of each tour, appearing as coloured overlays on the left map panel, are generated from GEOJSON files. These have been styled to change their display at different zoom levels.
+
+When points are selected, eg. <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/#zoom=10&lat=38.9393&lon=-76.9339&tour=2&point=38.9393,-76.9339">Bladensburg</a> they are styled to appear in orange, the details of the place and link to its appearance in the <a href="http://digital.nls.uk/travels-of-henrietta-liston/browse/index.html">Liston Journals</a> are shown to the upper right.
+
+The URL of the application changes dynamically to show the particular zoom level and centre of the map, as well as if a place or tours is selected. You can save this specific URL to return to a specific map view or selected place.
+
+View a more <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/">complete working version of the application</a> on the National Library of Scotland website.
 
