@@ -1,0 +1,277 @@
+
+body { overflow: hidden; padding: 0; margin: 0; width: 100%; height: 100%; font-family: "Cormorant",serif; background: #FFFFFF;}
+h4 {	font-size: 1.45em;#000000;}
+
+.close {font-size: 0.9em; color: #000000;}
+
+#gazetteers {
+	position:absolute; height:520px; min-height:45px; top:160px; !important; left: 20px; width: 460px; margin: 20px; max-height:480px;
+	padding: 10px;
+	border: 1px;
+	font-size: 0.9em;
+	border: 1px solid #ccc;
+	background-color: #EEE;
+	z-index: 1000000;
+}
+
+.tab-pane {
+	max-height:415px;
+	overflow-y: scroll;
+}
+
+.tab-pane fade in active {
+	color: #000000;
+}
+
+#gazetteers tbody {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+#gazetteers td {
+    	font-size: 1.1em;
+	font-family: "Cormorant",serif;
+    	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+#gazetteers p {
+    	font-size: 1.1em;
+}
+
+
+#gazetteers td {
+//  height: 50px
+}
+
+#gazetteers td a {
+font-size: 1.1em;
+  display: block;
+  height:100%;
+  width:100%;
+}
+
+#gazetteers tbody a {
+	color:#000000;
+}
+
+#gazetteers td a:hover {
+    	background-color: #333b4a;
+	color:#FFF;
+}
+
+#gazetteers tbody a:hover {
+	color:#FFF;
+}
+
+.nav-tabs>li  {
+	color:#000000;
+}
+
+#gazetteers #tab-content #chronological #gazetteerbullets li {
+	display:list-item;
+    list-style-type: circle;
+}
+
+
+
+#sidebartour { position: absolute; top: 120px; left: 7px; width: 245px; height:180px; font-size: 20px; font-weight:700; border: 1px solid #592F57; border-radius: 4px; background: #fff; 
+padding: 7px; 15px; opacity: 0.95; z-index: 101; font-family: inherit;}
+
+#sidebartour a {
+	color:#FFFFFF;
+	background-color: #FFFFFF;
+}
+
+
+#tourSelect { position: absolute; top: 200px; left: 15px;  z-index: 1001; background-color: #EEE;  font-family: "Cormorant",serif; font-weight:700; box-shadow: 0 1px 3px #ccc; }
+
+#layerSelect { position: absolute; top: 230px; left: 15px;  z-index: 1001; color: #000000; background-color: #EEE; font-family: "Cormorant",serif; font-weight:700; box-shadow: 0 1px 3px #ccc; }
+
+
+#sidebar { position: absolute; top: 150px; left: 20px; width: 180px; font-size: 10px; overflow: auto; border: 1px solid #592F57; border-radius: 3px; box-shadow: 0 0px 0px #CCC; 
+padding: 5px 2px 2px 15px; background: #fff; z-index: 101;}
+
+
+#mapleft { position: absolute; top: 115px; left: 0px; right: 45%; bottom: 0px; overflow: hidden; border: 1px solid #ccc;  box-shadow: 0 1px 3px #ccc; background-color: #cedfe4;} 
+
+@media (max-width: 70.25em){
+	#mapleft { right: 0; //bottom: 0;
+	}
+}
+
+#mapright { position: absolute; top: 115px; left: 55.5%; right: 0px; bottom: 0px; overflow: hidden; border: 1px solid #ccc;  box-shadow: 0 1px 3px #ccc; background-color: #cedfe4;} 
+
+@media (max-width: 70.25em){
+	#mapright { visibility: hidden; }
+}
+
+#tours {
+	position:absolute; top:258px; height: 320px; left: 15px; width:200px;
+	padding: 5px;
+	border: 1px
+	font-size: 0.9em;
+        font-weight:700;
+	border: 1px solid #ccc; box-shadow: 0 1px 3px #ccc; 
+	background-color: #EEE;
+	opacity: 0.98;
+	z-index: 10001;
+    	font-family: "Cormorant",serif;
+}
+
+#tours p {
+	line-height: 90%;
+	font-size: 14px;
+}
+
+#tours-header {
+		position:relative; text-align:center; font-size: 1.2em; height: 25px; width: 100px; border-bottom: 1px solid #ccc;  color: #000000; font-family: "Cormorant",serif;
+}
+
+
+#tours-button {
+	position:absolute; top:260px; left: 15px;
+	padding: 2px 5px 2px 5px;
+	border: 1px;
+	color:#FFFFFF;
+	font-size: 0.6em;
+	border: 1px solid #ccc; box-shadow: 0 1px 3px #ccc; 
+	background-color: #EEE;
+	font-weight:700;
+	opacity: 0.95;
+	z-index: 1000;
+        font-family: inherit;
+}
+
+#tours-button a {
+	font-size: 12px;
+}
+#scalebar {position: absolute; right: 20px; bottom: 75px; z-index: 10001; font-size: small;}
+
+#wfsResultsleft {
+    position: absolute;
+    padding: 5px;
+    right: 45.5%;
+    top: 120px;
+    z-index: 10;
+    background: url(http://digital.nls.uk/travels-of-henrietta-liston/img/nlsTopImage.png);
+
+    color: #6B590B;
+    font-weight:700;
+    border-radius: 3px;
+    font-size: 1.0em;
+    font-weight:700;
+    line-height: 115%;
+    opacity: 0.97;
+    overflow-y: scroll;
+    max-width: 250px;
+    max-height: 500px;
+    border: 1px solid #592F57;
+    font-family: "Cormorant",serif;
+}
+
+@media (max-width: 70.25em){
+	#wfsResultsleft { right: 1%; }
+}
+
+#wfsResultsleft {
+	display: block;
+}
+
+#wfsResultsleft tr.spacer {
+	margin-top: 0.5em;
+	padding-top: 10px; 
+	padding-bottom:10px;
+}
+
+.heading {
+
+    left: 5%;
+    width:30px;
+    padding-left:4px;
+    white-space: nowrap;
+    padding-right:4px;
+    vertical-align: top;
+    text-align: left;
+
+}
+
+.heading1 {
+
+    width:30px;
+    padding-left:4px;
+    white-space: nowrap;
+    font-size: 120%;
+    //padding-right:4px;
+    vertical-align: top;
+    text-align: left;
+
+}
+
+.link {
+
+    left: 5%;
+    width:170px;
+    padding-left:4px;
+    font-size: 100%;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    color: blue;
+}
+
+.link: hover { 
+    text-decoration: underline;
+}
+
+.info {
+
+    left: 1px;
+    width:170px;
+    padding-left:4px;
+    text-align: left;
+
+}
+
+.popover {
+	z-index: 10000;
+}
+
+footer { position: absolute; bottom: 0 !important;}
+
+@media (max-width: 70.25em){
+	footer { visibility: hidden; }
+}
+
+hr2 {
+    border: 1px solid #947901;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+hr2 {
+    box-sizing: content-box;
+    height: 0;
+    width: 80%;
+}
+
+.travelJTwoButton {
+	background-repeat: no-repeat;
+}
+
+.breadcrumbs p {
+	padding-left: 0em;
+}
+
+
+
+.top-bar.open { 
+  background: #FFF;
+  z-index: 10000;
+}
