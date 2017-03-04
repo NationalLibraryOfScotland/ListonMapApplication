@@ -5,7 +5,7 @@ This <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/">map applic
 
 There are <a href="http://digital.nls.uk/travels-of-henrietta-liston/places.html">Help Notes about the map application</a>, explaining its basic use.
 
-All the map specific Javascript is in the liston-map.js file.
+All the map specific Javascript is in the <a href="https://github.com/NationalLibraryOfScotland/ListonMapApplication/blob/master/liston-map.js">liston-map.js</a> file.
 
 The left-hand map panel allows a set of modern background maps to be displayed, and the lines and points of each tour. The right-hand map panel shows three georeferenced historical maps from the 1790s, which display at different zoom levels. These maps were generated using <a href="https://www.maptiler.com/">MapTiler</a>.
 
