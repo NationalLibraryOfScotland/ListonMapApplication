@@ -1621,10 +1621,7 @@ mapleft.on('click', function(evt) {
 
 	updateUrl();
 
-	$(document).ready(
-		$('.collapse').collapse('hide');
-		}
-	)
+	}
 
 	mapleft.on('moveend', onMoveEndLeft);
 
