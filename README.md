@@ -1,9 +1,9 @@
 ListonMapApplication
 ====================
 
-This <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/">map application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.5</a>, and GE0JSON sets of points and lines to form a geographical interface for the <a href="http://digital.nls.uk/travels-of-henrietta-liston/index.html">tours of Henrietta Liston, 1796-1801</a>. 
+This <a href="http://digital.nls.uk/travels-of-henrietta-liston/map/">map application</a> uses <a href="http://openlayers.org/">OpenLayers v 3.5</a>, and <a href="http://geojson.org/geojson-spec.html">GeoJSON</a> sets of points and lines to form a geographical interface for the <a href="http://digital.nls.uk/travels-of-henrietta-liston/index.html">tours of Henrietta Liston, 1796-1801</a>. 
 
-There are <a href="http://digital.nls.uk/travels-of-henrietta-liston/places.html">Help Notes about the map application</a>, explaining its basic use.
+There are <a href="http://digital.nls.uk/travels-of-henrietta-liston/places.html#help">Help Notes about the map application</a>, explaining its basic use.
 
 All the map specific Javascript written for this application is in the <a href="https://github.com/NationalLibraryOfScotland/ListonMapApplication/blob/master/liston-map.js">liston-map.js</a> file with comments explaining the functions.
 
